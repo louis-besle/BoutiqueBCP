@@ -1,0 +1,28 @@
+body {
+    font-family: system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    font-size: 10px;
+}
+
+nav {
+    background-color: #2E4CA6;
+    padding: 1rem;
+}
+
+a {
+    color: #F2B705;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nav_left {
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+#nav_right {
+    float: right;
+    margin-right: 0.5rem;
+}
