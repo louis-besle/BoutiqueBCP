@@ -1,0 +1,29 @@
+{% extends 'base.twig.html' %}
+
+{% block title %}Contact - Lebonplan{% endblock %}
+
+{% block page_actu %}Contact{% endblock %}
+
+{% block content %}
+<section>
+	   
+    <h1 class="text-center">Nous sommes à votre écoute</h1>
+    
+    <p>Vous pouvez nous contacter directement via <a href="mailto:info@lebonplan.fr">notre adresse de courriel</a> ou utilisez le formulaire ci-dessous. Nous vous répondrons dans tous les cas dans les délais les plus bref.</p>
+    
+    <article>
+    
+        <h2>Vous avez la parole</h2>
+        
+        <form>
+            <label>Nom complet<br></label><input name="fullname" type="text" value="" size="100" required >
+            <br><br>
+            <label>Votre message<br></label><textarea name="feedbacks" rows="5" cols="100" ></textarea>
+            <br><br>
+            <input type="submit" value="Envoyer" class="submit_btn">&nbsp;<input type="reset" value="Effacer" >
+        </form>
+        
+    </article>					
+    
+</section>
+{% endblock %}
