@@ -15,25 +15,6 @@ class SiteController extends Controller {
         echo $this->templateEngine->render('accueil.twig.html');
     }
 
-    public function pageEntreprise() {
-        $entreprises = $this->model->getEntreprises();
-        $nbentreprise = $this->model->getNbEntreprises();
-        $page_actuelle = $this->model->getPageActuelle();
-        echo $this->templateEngine->render('entreprise.twig.html', ['entreprises' => $entreprises,'page_actuelle' => $page_actuelle, 'nb_entreprises' => $nbentreprise]);
-    }
-
-    public function pageOffres() {
-        echo $this->templateEngine->render('offres.twig.html');
-    }
-
-    public function pageOffre() {
-        echo $this->templateEngine->render('offre.twig.html');
-    }
-
-    public function pageWishlist() {
-        echo $this->templateEngine->render('wishlist.twig.html');
-    }
-
     public function pageContact() {
         echo $this->templateEngine->render('contact.twig.html');
     }

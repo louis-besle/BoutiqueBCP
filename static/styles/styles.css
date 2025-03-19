@@ -1,28 +1,45 @@
-body {
+/* Style de la page complète */
+html {
+    font-size: 18px;
     font-family: system-ui;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
-    font-size: 10px;
+    scroll-behavior: smooth;
 }
 
-nav {
-    background-color: #2E4CA6;
-    padding: 1rem;
+/* Style du body */
+body {
+    background-color: whitesmoke;
 }
 
 a {
     color: #F2B705;
     text-decoration: none;
-    font-size: 2rem;
 }
 
-.nav_left {
-    margin-left: 1rem;
+.nav-links {
+    background-color: #2E4CA6;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlink:hover, a.active-page:hover {
+    color: #ffffff;
+    text-decoration: underline;
     font-weight: bold;
 }
 
-#nav_right {
-    float: right;
-    margin-right: 0.5rem;
+#right {
+    justify-self: end;
+}
+
+#left {
+    justify-self: start;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    height: 7.5rem;
 }

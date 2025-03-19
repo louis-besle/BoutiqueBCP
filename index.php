@@ -25,18 +25,6 @@ switch ($uri) {
     case '/':
         $controller->pageAccueil();
         break;
-    case 'entreprise':
-        $controller->pageEntreprise();
-        break;
-    case 'offres' : 
-        $controller->pageOffres();
-        break;
-    case 'offre' :
-        $controller->pageOffre();
-        break;
-    case 'wishlist' :
-        $controller->pageWishlist();
-        break;
     case 'contact' :
         $controller->pageContact();
         break;
