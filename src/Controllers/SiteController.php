@@ -12,7 +12,8 @@ class SiteController extends Controller {
 
     public function pageAccueil() {
         // TODO: Retrieve the list of tasks from the model
-        echo $this->templateEngine->render('accueil.twig.html');
+        $articles = $this->model->getArticles();
+        echo $this->templateEngine->render('accueil.twig.html', ['articles' => $articles]);
     }
 
     public function pageContact() {

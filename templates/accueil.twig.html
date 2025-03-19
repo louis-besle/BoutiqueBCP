@@ -1,25 +1,19 @@
 {% extends 'base.twig.html' %}
 
 {% block content %}
-    <section class="hero">
-        <h1 class="title-home">Bienvenue dans votre communauté professionnelle</h1>
-        <p>Trouvez des offres d'emploi, de stages et d'alternances adaptées à votre profil.</p>
-    </section>
-    <section class="categories">
-        <div class="category">
-            <h3>Emplois</h3>
-            <p>Découvrez les dernières offres d'emploi.</p>
-            <a href="offres.php" class="btn">Voir les offres</a>
+    <div class="container">
+    {% for article in articles %}
+        <div class="card">
+            <div class="card-details">
+                <img src="/static/images/{{ article.img }}" class="img-boutique">
+                <div class="nom-prix">
+                    <p class="text-title">{{ article.nom }}</p>
+                    <p class="text-title">{{ article.prix }}</p>
+                </div>
+                <p class="text-body">{{ article.description }}</p> <br>
+                <a href="?uri=offres" class="btn">Ajouter au panier</a>
+            </div> 
         </div>
-        <div class="category">
-            <h3>Stages</h3>
-            <p>Trouvez des stages pour développer vos compétences.</p>
-            <a href="offres.php" class="btn">Voir les offres</a>
-        </div>
-        <div class="category">
-            <h3>Alternances</h3>
-            <p>Explorez les opportunités d'alternance.</p>
-            <a href="offres.php" class="btn">Voir les offres</a>
-        </div>
-    </section>
+    {% endfor %}
+    </div>
 {% endblock %}
